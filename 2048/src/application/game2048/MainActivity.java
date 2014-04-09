@@ -1,9 +1,9 @@
 package application.game2048;
 
 import application.game2048.R;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
+//import android.support.v7.app.ActionBarActivity;
+//import android.support.v7.app.ActionBar;
+//import android.support.v4.app.Fragment;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -89,19 +89,19 @@ public class MainActivity extends Activity{
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
-	public static class PlaceholderFragment extends Fragment {
-
-		public PlaceholderFragment() {
-		}
-
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.fragment_main, container,
-					false);
-			return rootView;
-		}
-	}
+//	public static class PlaceholderFragment extends Fragment {
+//
+//		public PlaceholderFragment() {
+//		}
+//
+//		@Override
+//		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//				Bundle savedInstanceState) {
+//			View rootView = inflater.inflate(R.layout.fragment_main, container,
+//					false);
+//			return rootView;
+//		}
+//	}
 	public void showBoard(){
 		for(int i=0;i<4;i++){
 			for(int j=0;j<4;j++){
