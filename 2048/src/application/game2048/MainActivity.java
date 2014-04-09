@@ -1,10 +1,12 @@
 package application.game2048;
 
 import application.game2048.R;
+import android.app.ActionBar;
 //import android.support.v7.app.ActionBarActivity;
 //import android.support.v7.app.ActionBar;
 //import android.support.v4.app.Fragment;
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -105,11 +107,12 @@ public class MainActivity extends Activity{
 	public void showBoard(){
 		for(int i=0;i<4;i++){
 			for(int j=0;j<4;j++){
+				String color2 = "#81F781";
 				if(board.getValue(i,j).compareTo(tvBoard[i][j].getText().toString())!=0){
 					tvBoard[i][j].setText(board.getValue(i,j));
 					tvBoard[i][j].startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
 //					if(board.getValue(i,j).compareTo("2")==0)
-//							tvBoard[i][j].setBackgroundColor(0x58FA58);
+//						tvBoard[i][j].setBackgroundColor(Color.parseColor(color2));
 
 				}
 			}
