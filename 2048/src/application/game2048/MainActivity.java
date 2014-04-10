@@ -107,7 +107,7 @@ public class MainActivity extends Activity{
 	public void showBoard(){
 		for(int i=0;i<4;i++){
 			for(int j=0;j<4;j++){
-				String color2 = "#81F781";
+//				String color2 = "#81F781";
 				if(board.getValue(i,j).compareTo(tvBoard[i][j].getText().toString())!=0){
 					tvBoard[i][j].setText(board.getValue(i,j));
 					tvBoard[i][j].startAnimation(AnimationUtils.loadAnimation(this, android.R.anim.fade_in));
